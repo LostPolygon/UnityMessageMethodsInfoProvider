@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2DD2872E-61A9-4299-9B67-716335B67345}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>LostPolygon.UnityMessageMethodsInfoProvider</RootNamespace>
+    <AssemblyName>LostPolygon.UnityMessageMethodsInfoProvider</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UnityClassesDataProvider.cs" />
+    <Compile Include="UnityEngineStubs\Attributes\DescriptionAttribute.cs" />
+    <Compile Include="UnityEngineStubs\Attributes\DocumentationNameAttribute.cs" />
+    <Compile Include="UnityEngineStubs\Attributes\IsStaticAttribute.cs" />
+    <Compile Include="UnityEngineStubs\Attributes\MinimalUnityVersionAttribute.cs" />
+    <Compile Include="UnityEngineStubs\Attributes\OriginalNameAttribute.cs" />
+    <Compile Include="UnityEngineStubs\UnityEditor\IAssetModificationProcessor.cs" />
+    <Compile Include="UnityEngineStubs\UnityEditor\IAssetModificationProcessorDeprecated.cs" />
+    <Compile Include="UnityEngineStubs\UnityEditor\IAssetPostprocessor.cs" />
+    <Compile Include="UnityEngineStubs\UnityEditor\IEditor.cs" />
+    <Compile Include="UnityEngineStubs\UnityEditor\IEditorWindow.cs" />
+    <Compile Include="UnityEngineStubs\UnityEditor\IScriptableWizard.cs" />
+    <Compile Include="UnityEngineStubs\UnityEditor\Stubs\AssetDeleteResult.cs" />
+    <Compile Include="UnityEngineStubs\UnityEditor\Stubs\AssetMoveResult.cs" />
+    <Compile Include="UnityEngineStubs\UnityEditor\Stubs\RemoveAssetOptions.cs" />
+    <Compile Include="UnityEngineStubs\UnityEngine\IMonoBehaviour.cs" />
+    <Compile Include="UnityEngineStubs\UnityEngine\IScriptableObject.cs" />
+    <Compile Include="UnityEngineStubs\UnityEngine\Stubs\AudioClip.cs" />
+    <Compile Include="UnityEngineStubs\UnityEngine\Stubs\BitStream.cs" />
+    <Compile Include="UnityEngineStubs\UnityEngine\Stubs\Collider.cs" />
+    <Compile Include="UnityEngineStubs\UnityEngine\Stubs\Collider2D.cs" />
+    <Compile Include="UnityEngineStubs\UnityEngine\Stubs\Collision.cs" />
+    <Compile Include="UnityEngineStubs\UnityEngine\Stubs\Collision2D.cs" />
+    <Compile Include="UnityEngineStubs\UnityEngine\Stubs\ControllerColliderHit.cs" />
+    <Compile Include="UnityEngineStubs\UnityEngine\Stubs\GameObject.cs" />
+    <Compile Include="UnityEngineStubs\UnityEngine\Stubs\MasterServerEvent.cs" />
+    <Compile Include="UnityEngineStubs\UnityEngine\Stubs\Material.cs" />
+    <Compile Include="UnityEngineStubs\UnityEngine\Stubs\NetworkConnectionError.cs" />
+    <Compile Include="UnityEngineStubs\UnityEngine\Stubs\NetworkDisconnection.cs" />
+    <Compile Include="UnityEngineStubs\UnityEngine\Stubs\NetworkMessageInfo.cs" />
+    <Compile Include="UnityEngineStubs\UnityEngine\Stubs\NetworkPlayer.cs" />
+    <Compile Include="UnityEngineStubs\UnityEngine\Stubs\Renderer.cs" />
+    <Compile Include="UnityEngineStubs\UnityEngine\Stubs\RenderTexture.cs" />
+    <Compile Include="UnityEngineStubs\UnityEngine\Stubs\Sprite.cs" />
+    <Compile Include="UnityEngineStubs\UnityEngine\Stubs\Texture2D.cs" />
+    <Compile Include="UnityMessageMethodInfoData.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
